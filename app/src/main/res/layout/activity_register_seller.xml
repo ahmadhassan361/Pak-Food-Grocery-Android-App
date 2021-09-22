@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegisterSellerActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/shape_rect01"
+        android:padding="10dp"
+
+        >
+        <ImageButton
+            android:id="@+id/bacKbtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src="@drawable/ic_back_white"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+
+            />
+        <TextView
+            android:id="@+id/seller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Register Seller"
+            android:textStyle="bold"
+            android:transitionName="logo_text"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"/>
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_baseline_policy_24"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/policy"
+            android:scaleType="fitXY"
+            />
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/iconIv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_circle01"
+        android:src="@drawable/ic_key_white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"
+        android:transitionName="logo"
+        android:padding="5dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iconIv"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+
+
+
+            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:id="@+id/profileIv"
+                android:layout_centerHorizontal="true"
+                app:c_border="true"
+                app:c_border_color="@color/colorPrimaryDark"
+                app:c_border_width="1dp"
+                android:src="@drawable/ic_baseline_person"
+
+                />
+
+            <EditText
+                android:id="@+id/nameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_rect02"
+                android:layout_below="@+id/profileIv"
+                android:hint="Full Name"
+                android:transitionName="fullname"
+                android:singleLine="true"
+                android:padding="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:textColorHint="@android:color/darker_gray"
+                android:drawableStart="@drawable/ic_person_gray"
+                android:drawablePadding="5dp"
+                android:inputType="textPersonName|textCapWords"/>
+            <EditText
+                android:id="@+id/shopnameEt"
+                android:layout_width="match_parent"
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:textColorHint="@android:color/darker_gray"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_rect02"
+                android:layout_below="@+id/nameEt"
+                android:hint="Shop Name"
+                android:singleLine="true"
+
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_store_gray"
+                android:drawablePadding="5dp"
+                android:inputType="textPersonName|textCapWords"/>
+            <EditText
+                android:id="@+id/phoneEt"
+                android:layout_width="match_parent"
+                android:transitionName="phone"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:textColorHint="@android:color/darker_gray"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_rect02"
+                android:layout_below="@+id/shopnameEt"
+                android:hint="Phone"
+                android:padding="10dp"
+                android:singleLine="true"
+
+                android:drawableStart="@drawable/ic_phone_gray"
+                android:drawablePadding="5dp"
+                android:inputType="phone"/>
+            <EditText
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:textColorHint="@android:color/darker_gray"
+                android:id="@+id/deliveryFee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_rect02"
+                android:layout_below="@+id/phoneEt"
+                android:hint="Deliery Fee"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_local_shipping_gray"
+                android:drawablePadding="5dp"
+                android:inputType="numberDecimal"/>
+            <ImageButton
+                android:layout_margin="5dp"
+                android:id="@+id/gpsBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/ic_baseline_my_location_24"
+                android:scaleType="fitXY"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/deliveryFee"
+                />
+            <LinearLayout
+                android:layout_toEndOf="@+id/gpsBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deliveryFee"
+                android:id="@+id/adressLL"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:id="@+id/countryEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/shape_rect02"
+                    android:hint="Country"
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:singleLine="true"
+
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_location_gray"
+                    android:drawablePadding="5dp"
+                    android:inputType="textPostalAddress"/>
+                <EditText
+                    android:id="@+id/stateEt"
+                    android:singleLine="true"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/shape_rect02"
+                    android:hint="State"
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_location_gray"
+                    android:drawablePadding="5dp"
+                    android:inputType="textPostalAddress"/>
+                <EditText
+                    android:id="@+id/cityEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:singleLine="true"
+
+                    android:background="@drawable/shape_rect02"
+                    android:hint="City"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_location_gray"
+                    android:drawablePadding="5dp"
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:inputType="textPostalAddress"/>
+
+            </LinearLayout>
+            <EditText
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:textColorHint="@android:color/darker_gray"
+                android:id="@+id/addressEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_rect02"
+                android:layout_below="@+id/adressLL"
+                android:hint="Complete Address"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_location_gray"
+                android:drawablePadding="5dp"
+                android:inputType="textPostalAddress|textMultiLine"/>
+
+            <EditText
+                android:id="@+id/emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_rect02"
+                android:layout_below="@+id/addressEt"
+                android:hint="Email"
+                android:singleLine="true"
+                android:transitionName="email"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_mail_gray"
+                android:drawablePadding="5dp"
+                android:inputType="textEmailAddress"/>
+            <EditText
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:textColorHint="@android:color/darker_gray"
+                android:id="@+id/passwordEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_rect02"
+                android:layout_below="@+id/emailEt"
+                android:hint="Password"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:transitionName="password"
+                android:drawableStart="@drawable/ic_lock_grey"
+                android:drawablePadding="5dp"
+                android:inputType="textPassword"/>
+            <EditText
+                android:id="@+id/cPpasswordEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_rect02"
+                android:layout_below="@+id/passwordEt"
+                android:hint="Confirm Password"
+                android:padding="10dp"
+                android:singleLine="true"
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:textColorHint="@android:color/darker_gray"
+
+                android:drawableStart="@drawable/ic_lock_grey"
+                android:drawablePadding="5dp"
+                android:inputType="textPassword"/>
+
+            <Button
+                android:transitionName="login_btn"
+                android:id="@+id/registerBtn"
+                android:background="@color/colorPrimary"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cPpasswordEt"
+                android:layout_centerHorizontal="true"
+                android:text="Register"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:textAllCaps="false"
+                android:textSize="18sp"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

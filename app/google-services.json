@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1052270543533",
+    "firebase_url": "https://pakgrocery-17ed9.firebaseio.com",
+    "project_id": "pakgrocery-17ed9",
+    "storage_bucket": "pakgrocery-17ed9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052270543533:android:81c88e3fb317ce7f073c24",
+        "android_client_info": {
+          "package_name": "com.example.pakgrocery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052270543533-urvt9aeg97mv9hkl5se6n0s987dll2fs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm5MMOoITyZOGUhYOsfGXqF7QNYirh3FA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052270543533-urvt9aeg97mv9hkl5se6n0s987dll2fs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

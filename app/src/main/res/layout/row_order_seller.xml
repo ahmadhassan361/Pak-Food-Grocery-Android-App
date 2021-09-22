@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="3dp"
+    android:background="@android:color/white"
+    app:contentPadding="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rect09"
+        android:padding="5dp"
+        >
+        <TextView
+            android:padding="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/orderDateTv"
+            android:layout_alignParentStart="true"
+            android:id="@+id/orderIdTv"
+            android:text="order: 23423"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:padding="2dp"
+android:layout_alignParentEnd="true"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/orderDateTv"
+            android:text="dd/mm/yyyy"
+            android:textColor="@color/colorGray02"
+            android:layout_margin="5dp"
+            />
+        <TextView
+            android:padding="2dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailTv"
+            android:text="Phone No:"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@+id/nameTv"
+            />
+        <TextView
+            android:padding="2dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameTv"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@+id/orderIdTv"
+            />
+
+        <TextView
+            android:padding="2dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/amountTv"
+            android:text="Total Amount: $"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@+id/emailTv"/>
+        <TextView
+            android:padding="2dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/statusTv"
+            android:text="In Progress"
+            android:layout_toStartOf="@+id/nextIv"
+            android:layout_below="@+id/emailTv"
+            android:textColor="@color/colorGreen"
+            />
+
+        <ImageView
+            android:padding="2dp"
+
+            android:id="@+id/nextIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_next_gray"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

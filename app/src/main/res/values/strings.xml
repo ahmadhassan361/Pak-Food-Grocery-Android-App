@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pak Food &amp; Grocery</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="shops">Shops</string>
+    <string name="orders">Orders</string>
+    <string name="name">Name</string>
+</resources>

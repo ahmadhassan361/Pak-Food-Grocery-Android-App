@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="80dp"
+        android:id="@+id/toolbarRl"
+        android:background="@drawable/shape_rect01"
+        android:padding="10dp"
+        >
+<ImageButton
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:id="@+id/backBtn"
+    android:background="@null"
+    android:layout_centerVertical="true"
+    android:src="@drawable/ic_back_white"
+    android:layout_marginStart="5dp"
+    />
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/deleteBtn"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            />
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/editBtn"
+            android:background="@null"
+            android:src="@drawable/ic_edit_white"
+            android:layout_toStartOf="@+id/deleteBtn"
+            android:layout_marginEnd="5dp"
+            />
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Product Detail"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/productIconIv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape_rect11"
+        android:src="@drawable/ic_baseline_add_shopping_cart_24"
+        android:adjustViewBounds="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productIconIv"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/discountedNoteTv"
+            android:background="@drawable/shape_rect05"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:text="10% Off"
+            android:textColor="@color/colorGreen"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleTv"
+            android:layout_marginTop="5dp"
+            android:text="The Product Title"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/descriptionTv"
+            android:layout_marginTop="5dp"
+            android:text="The Product Description"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/categoryTv"
+            android:layout_marginTop="5dp"
+            android:text="Category"
+            android:textColor="@android:color/black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/quantityTv"
+            android:layout_marginTop="5dp"
+            android:text="Quantity"
+            android:textColor="@android:color/black"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/discountedPriceTv"
+                android:text="$10"
+                android:textColor="@color/colorGray02"
+                android:layout_marginEnd="10sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/originalPriceTv"
+                android:text="$15"
+                android:textColor="@color/colorGray02"
+                android:layout_toEndOf="@+id/discountedPriceTv"
+                android:layout_marginEnd="10sp"
+                />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

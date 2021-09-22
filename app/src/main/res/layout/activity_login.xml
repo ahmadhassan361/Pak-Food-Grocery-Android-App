@@ -1,0 +1,109 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".activities.LoginActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect08"
+        android:id="@+id/half"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:src="@drawable/deliver"
+            android:layout_alignParentTop="true"
+            android:transitionName="logo"
+            android:id="@+id/iconIv"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In To Continue"
+            android:layout_below="@+id/iconIv"
+            android:transitionName="logo_text"
+            android:id="@+id/signInFirst"
+            android:textSize="25sp"
+            android:fontFamily="@font/bungee"
+            android:layout_marginBottom="10dp"
+            android:layout_margin="10dp"
+            />
+
+    </RelativeLayout>
+
+
+
+
+        <EditText
+            android:transitionName="email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:textColorHint="@android:color/darker_gray"
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/half"
+            android:background="@drawable/shape_rect02"
+            android:hint="Email"
+            android:padding="15dp"
+            android:drawableStart="@drawable/ic_mail_gray"
+            android:drawablePadding="5dp"
+            android:inputType="textEmailAddress"/>
+
+
+
+    <EditText
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/passwordEt"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_rect02"
+        android:transitionName="password"
+            android:layout_below="@+id/emailEt"
+            android:hint="Password"
+            android:padding="15dp"
+            android:drawableStart="@drawable/ic_lock_grey"
+            android:drawablePadding="5dp"
+            android:inputType="textPassword"/>
+
+
+    <Button
+        android:background="@android:color/transparent"
+        android:id="@+id/forgotTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="forgot password?"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:layout_below="@+id/passwordEt"
+        android:layout_margin="5dp"/>
+    <Button
+        android:id="@+id/loginBtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgotTv"
+        android:layout_centerHorizontal="true"
+        android:text="Go"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        android:transitionName="login_btn"
+        android:background="@color/colorPrimary"
+        android:textSize="18sp"/>
+    <Button
+        android:background="@android:color/transparent"
+        android:id="@+id/noAccountTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Not have an account? Register."
+        android:layout_marginTop="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/loginBtn"
+        android:transitionName="another_btn"
+        android:padding="5dp"/>
+</RelativeLayout>
